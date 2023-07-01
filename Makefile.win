@@ -1,0 +1,29 @@
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = obj/Calculator.o obj/math.o obj/Utils.o
+LINKOBJ  = obj/Calculator.o obj/math.o obj/Utils.o
+
+BIN      = bin/Calculator.exe
+
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after 
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) 
+
+obj/Calculator.o: Calculator/Calculator.c
+	$(CC) -c Calculator/Calculator.c -o obj/Calculator.o 
+
+obj/math.o: Calculator/math.c
+	$(CC) -c Calculator/math.c -o obj/math.o 
+
+obj/Utils.o: Calculator/Utils.c
+	$(CC) -c Calculator/Utils.c -o obj/Utils.o 
