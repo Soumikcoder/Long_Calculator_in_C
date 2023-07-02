@@ -27,25 +27,26 @@ To get started with the long number calculator, follow these steps:
 
 2. Compile the C program using your preferred C compiler. For example, using `gcc`:
     
- Windows:
- ```shell
-mingw32-make.exe -f Makefile.win all
-```
+     Windows:
+       ```
+   mingw32-make.exe -f Makefile.win all
+       ```
+    
+     Linux:
+       ```
+           make
+       ```
 
- Linux:
- ```shell
-    make
- ```
-
-3. Run the compiled program:
- Windows :
- ```shell
-    bin\Calculator.exe
- ```
- Linux :
- ```shell
- ./bin/Calculator
- ```
+4. Run the compiled program:
+ 
+     Windows :
+        ```
+           bin\Calculator.exe
+        ```
+     Linux :
+        ```
+        ./bin/Calculator
+        ```
 
 
 
@@ -55,18 +56,18 @@ Once the program is running, you will be prompted to enter two long numbers and 
 
 1. Enter the first long number when prompted:
 
-```bash
- 12345678901234567890
-``` 
+   ```bash
+    12345678901234567890
+   ``` 
 2. Enter the second long number when prompted:
-```bash
-98765432109876543210
-```
+   ```bash
+   98765432109876543210
+   ```
 3. The program will display the result:
-```bash
-Addition is: 111111111011111111100
-Multiplication is: 1219326311370217952237463801111263526900
-```
+   ```bash
+   Addition is: 111111111011111111100
+   Multiplication is: 1219326311370217952237463801111263526900
+   ```
 
 ## Contributing
 
