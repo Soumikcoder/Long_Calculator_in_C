@@ -6,6 +6,7 @@ This repository contains a C program for performing arithmetic operations on lon
 
 
 
+![Calculator Screenshot](https://github.com/Soumikcoder/Long_Calculator_in_C/blob/main/Calculator.gif)
 
 
 ## Features
